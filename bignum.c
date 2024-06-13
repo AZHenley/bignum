@@ -71,7 +71,7 @@ void bignum_multiply(BigNum *result, const BigNum *a, const BigNum *b) {
         }
     }
     
-    // Trim any leading zeros
+    // Trim any leading zeros.
     while (result->size > 1 && result->digits[result->size - 1] == 0) {
         result->size--;
     }
