@@ -11,8 +11,7 @@ void bignum_init(BigNum *n, const char *str) {
     n->size = strlen(str);
     n->digits = malloc(n->size * sizeof(char));
     for (int i = 0; i < n->size; i++) {
-        // Store digits in reverse.
-        // Convert from ASCII to integer.
+        // Store digits in reverse. Convert from ASCII.
         n->digits[i] = str[n->size - 1 - i] - '0'; 
     }
 }
